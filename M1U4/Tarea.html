@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Cómo me traslado?</title>
+    <script type="text/javascript"></script>
+    <link rel="stylesheet" href="Tarea.css">
+</head>
+<body>
+    <script>
+        var transporte;
+        transporte=prompt('¿Qué distancia en metros quieres recorrer?','');
+    if(transporte<= 1000){
+        document.write('Te conviene ir a pie');
+    }else if(transporte<= 10000){
+        document.write('Te conviene ir en bicicleta')
+    }else if(transporte<= 30000){
+        document.write('Te conviene tomar el colectivo')
+    }else if(transporte<= 100000){
+        document.write('Te conviene ir en auto')
+    }else if(transporte>100000){
+        document.write('Te conviene tomar un avión')
+    }
+    </script> 
+</body>
+</html>
