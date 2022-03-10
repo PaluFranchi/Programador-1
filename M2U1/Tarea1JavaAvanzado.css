@@ -1,0 +1,13 @@
+div{   
+  width: 100px; 
+  height: 100px;
+}
+#bloque{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-left: 400px;
+}   

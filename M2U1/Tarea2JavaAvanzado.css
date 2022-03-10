@@ -1,0 +1,23 @@
+div {
+    display: flex;
+    position: relative;
+}
+#texto{
+    color: brown;
+    font-family: cambria;
+    border-radius: 10px;
+    height: 50px;
+    width: 450px;
+}
+#bloque{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 400px;
+}   
+body{
+    background-color: rgb(19, 156, 219);
+}
