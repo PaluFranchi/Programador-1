@@ -1,0 +1,19 @@
+/* #list-example {
+    width: fit-content;
+    height: 500px;
+} */
+.page-link {
+    background-color: floralwhite;
+    color: coral;
+}
+.accordion-button:not(.collapsed) {
+    background-color: darksalmon;
+    color: crimson;
+}
+.accordion-button{
+    background-color:floralwhite;
+}
+a:-webkit-any-link {
+    background-color: darksalmon;
+    color: crimson;
+}
