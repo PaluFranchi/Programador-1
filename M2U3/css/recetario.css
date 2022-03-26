@@ -1,1 +1,74 @@
-/* font-family: 'Hurricane', cursive; */ 
+
+h1{
+    font-family: 'Hurricane', cursive;
+}
+
+.hero{
+    background: url(../img/marmol.png) no-repeat;
+    background-size: cover;
+    height: 0.5vh;
+    min-height: 600px;
+}
+
+footer{
+    background-color: black;
+    color: antiquewhite;
+}
+
+.navbar{
+    background-color: black;
+}
+
+a{
+   color: antiquewhite;
+   font-family: 'Raleway', sans-serif;
+}
+
+a:hover{ 
+    color: chocolate;
+}
+
+.nav-link{
+    color: antiquewhite;
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav-link:hover, .nav-link:focus{
+    color: chocolate;
+}
+
+.dropdown-item{
+    font-family: 'Raleway', sans-serif;
+    color: antiquewhite;
+}
+
+.dropdown-item:active, .dropdown-item:hover{
+    background-color: chocolate;
+    color: antiquewhite;
+}
+
+.dropdown-menu{
+    background-color: black;
+}
+
+.btn-outline-success{
+    color: antiquewhite;
+    border-color: antiquewhite;
+}
+
+.btn-outline-success:hover{
+    color: chocolate;
+    background-color: antiquewhite;
+}
+
+.receta{
+    color: rgb(99, 5, 5);
+}
+
+.recetusel{
+    color: rgb(99, 5, 5);
+}
+
+.d-block{
+    opacity:0.6
+}
