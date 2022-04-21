@@ -3,11 +3,9 @@ var router = express.Router();
 var nodemailer = require('nodemailer');
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
+router.get('/', function(req, res, next) {
   res.render('contacto');
 });
-
-module.exports = router;
 
 router.post('/contacto', async (req, res, next) => {
 
@@ -23,19 +21,24 @@ router.post('/contacto', async (req, res, next) => {
     subject: 'Contacto desde el recetario',
     html: nombre + " " + apellido + " se contacto a traves y quiere mas informacion a este correo: " + email + ". <br> Además, hizo el siguiente comentario: " + mensaje
   }
+
+
+  var transporter = nodemailer.createTransport({
+    host: process.env.SMTP_HOST,
+    port: process.env.SMTP_PORT,
+    auth: {
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS,
+    }
+  })
+
+  var info = await transporter.sendMail(obj);
+
+  res.render('contacto', {
+    message: 'Mensaje enviado correctamente'
+  });
+
 });
 
-var transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: process.env.SMTP_PORT,
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
-  }
-})
+module.exports = router;
 
-var info = await transporter.sendMail(obj);
-
-res.render('/contacto', {
-  message: 'Mensaje enviado correctamente'
-});
