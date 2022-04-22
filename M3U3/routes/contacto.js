@@ -19,7 +19,7 @@ router.post('/contacto', async (req, res, next) => {
   var obj = {
     to: 'palomafranchimont@gmail.com',
     subject: 'Contacto desde el recetario',
-    html: nombre + " " + apellido + " se contacto a traves y quiere mas informacion a este correo: " + email + ". <br> Además, hizo el siguiente comentario: " + mensaje
+    html: nombre + " " + apellido + " se contacto a traves y quiere mas informacion a este correo: " + email + ". Además, hizo el siguiente comentario: " + mensaje,
   }
 
 
@@ -30,11 +30,11 @@ router.post('/contacto', async (req, res, next) => {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS,
     }
-  })
+  });
 
   var info = await transporter.sendMail(obj);
 
-  res.render('contacto', {
+  res.render('/contacto', {
     message: 'Mensaje enviado correctamente'
   });
 
