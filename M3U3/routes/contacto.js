@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
   res.render('contacto');
 });
 
-router.post('/contacto', async (req, res, next) => {
+router.post('/contacto', async(req, res, next) => {
 
   var nombre = req.body.nombre;
   var apellido = req.body.apellido;
@@ -34,7 +34,7 @@ router.post('/contacto', async (req, res, next) => {
 
   var info = await transporter.sendMail(obj);
 
-  res.render('/contacto', {
+  res.render('contacto', {
     message: 'Mensaje enviado correctamente'
   });
 
