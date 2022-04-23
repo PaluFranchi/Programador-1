@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
   res.render('contacto');
 });
 
-router.post('/contacto', async(req, res, next) => {
+router.post('/', async(req, res, next) => {
 
   var nombre = req.body.nombre;
   var apellido = req.body.apellido;
