@@ -1,0 +1,40 @@
+<div class="container-fluid">
+    <div id="home" class="row align-items-center hero">
+        <div class="col-md-4 offset-md-1">
+            <h1>Contáctanos a través del formulario</h1>
+        </div>
+
+        <!-- inicio formulario -->
+        <div class="col-md-5 offset-md-1">
+            <form class="row g-3 needs-validation" action="/contacto" method="post">
+                <div class="col-md-4 position-relative">
+                    <label for="exampleFormControlInput2" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="nombre"
+                        name="nombre">
+                </div>
+                <div class="col-md-4 position-relative">
+                    <label for="exampleFormControlInput3" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="apellido"
+                        name="apellido">
+                </div>
+                <div class="mb-1">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="email" name="email">
+                </div>
+                <div class="mb-1">
+                    <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="mensaje"></textarea>
+                </div>
+
+                <div class="col-12">
+                    <button class="btn btn-outline-success" type="submit">Enviar</button>
+                </div>
+            </form>
+            {{#if alert}}
+                {{alert}}
+            {{/if}}
+        </div>
+    </div>
+    <!-- fin formulario -->
+</div>
