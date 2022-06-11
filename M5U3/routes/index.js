@@ -8,7 +8,7 @@ router.get('/', async function(req, res, next) {
 
   var novedades = await novedadesModel.getNovedades();
 
-  novedades = novedades.splice(0, 5); //selecciona los primero 5 elementos del array
+  novedades = novedades.splice(0, 3); //selecciona los primero 5 elementos del array
   novedades = novedades.map(novedad => {
     if(novedad.img_id) {
       const imagen = cloudinary.url(novedad.img_id, {

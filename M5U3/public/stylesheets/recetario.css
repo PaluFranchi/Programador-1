@@ -132,3 +132,8 @@ a:hover {
     margin-right: 1.4rem;
     opacity: 1;
 }
+
+#carouselExampleDark {
+    width: 200px;
+    height: 200px;
+}
