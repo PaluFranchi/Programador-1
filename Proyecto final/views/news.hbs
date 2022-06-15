@@ -1,15 +1,17 @@
 <div class="container-fluid">
     <div id="home" class="row align-items-center hero">
-        <div id="novedades" class="col-md-5 offset-md-1 py-3">
+        <div id="novedades" class="col-md-4 offset-md-1 py-3">
             <div>
-                <h1 style="margin: 25px;">Novedades</h1>
+                <h1>Novedades</h1>
+                <p>En esta sección podrás encontrar la historia de algunas de las recetas presentes en este recetario, así como también novedades respecto al mundo de la gastronomía</p>
             </div>
         </div>
         {{!-- inicio novedades --}}
-        <div class="col-md-4 offset-md-1 py3">
+        <div class="col-md-4 offset-md-1 py-3">
             <ul class="lista-novedades" style="margin-left: 50px;">
                 {{#each novedades}}
-                <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal{{id}}"><img src="{{imagen}}">{{titulo}}</a></li>
+                <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal{{id}}"><img
+                            src="{{imagen}}">{{titulo}}</a></li>
                 {{/each}}
             </ul>
         </div>
@@ -19,7 +21,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">{{titulo}}</h5>
+                        <h2 class="modal-title" id="exampleModalLabel">{{titulo}}</h2>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">

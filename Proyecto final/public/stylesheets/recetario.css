@@ -110,8 +110,8 @@ a:hover {
 }
 
 .lista-novedades li a img {
-    width: 120px;
-    height: 50px;
+    width: 180px;
+    height: 90px;
     filter: grayscale();
     transition: all .2s ease-in-out;
     margin-right: 1rem;
@@ -123,6 +123,7 @@ a:hover {
     margin-right: 1.4rem;
     opacity: 1;
 }
+
 
 footer {
     width: 100%;
