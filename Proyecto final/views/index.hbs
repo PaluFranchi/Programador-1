@@ -27,21 +27,24 @@
                         <img src="images/tiramisu.jpg" class="d-block w-100" alt="Tiramisú">
                         <div class="carousel-caption d-none d-md-block">
                             <h5 class="receta">Tiramisú</h5>
-                            <p class="recetusel">Para ver esta receta hace <a href="">click aquí</a></p>
+                            <p class="recetusel">Para ver esta receta hace <a href="" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">click aquí</a></p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
                         <img src="images/Volcan.jpg" class="d-block w-100" alt="Volcan de chocolate">
                         <div class="carousel-caption d-none d-md-block">
                             <h5 class="receta">Volcán de chocolate</h5>
-                            <p class="recetusel">Para ver esta receta hace <a href="">click aquí</a></p>
+                            <p class="recetusel">Para ver esta receta hace <a href="" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal1">click aquí</a></p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="images/Brownie.jpg" class="d-block w-100" alt="Brownie">
                         <div class="carousel-caption d-none d-md-block">
                             <h5 class="receta">Brownies</h5>
-                            <p class="recetusel">Para ver esta receta hace <a href="">click aquí</a></p>
+                            <p class="recetusel">Para ver esta receta hace <a href="" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal2">click aquí</a></p>
                         </div>
                     </div>
                 </div>
@@ -56,6 +59,112 @@
                     <span class="visually-hidden">Siguiente</span>
                 </button>
             </div>
+            {{!-- inicio modal 1--}}
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Tiramisú</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h6>Ingredientes:</h6>
+                            <ul>
+                                <li>vainillas   2 paquetes pequeños</li>
+                                <li>oporto  c/n</li>
+                                <li>café  c/n</li>
+                                <li>huevos  2</li>
+                                <li>queso crema  200gr</li>
+                                <li>azúcar  100gr</li>
+                                <li>cacao en polvo  c/n</li>
+                            </ul>
+                            <h6>Procedimiento:</h6>
+                            <ol>
+                                <li>mezclar los huevos con el queso crema y el azúcar</li>
+                                <li>hacer un marinado con el café y el oporto</li>
+                                <li>pasar las vainillas por la mezcla del paso anterior y disponerlas en el molde</li>
+                                <li>intercalar las vainillas humedas con la mezcla del paso 1</li>
+                                <li>al finalizar espolvorearle cacao en polvo por encima</li>
+                                <li>llevar al frío por al menos 2hs</li>
+                            </ol>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{!-- fin modal 1--}}
+            {{!-- inicio modal 2--}}
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Volcán de chocolate</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            h6>Ingredientes:</h6>
+                            <ul>
+                                <li>chocolate  150gr</li>
+                                <li>manteca  100gr</li>
+                                <li>azúcar  100gr</li>
+                                <li>harina  2cdas</li>
+                                <li>huevo   2</li>
+                            </ul>
+                            <h6>Procedimiento:</h6>
+                            <ol>
+                                <li>derretir la manteca con el chocolate</li>
+                                <li>mezclar los huevos con el azúcar hasta que se espumen</li>
+                                <li>agregar la mezcla del paso 1 a temperatura ambiente</li>
+                                <li>agregar el harina y unir</li>
+                                <li>llevar a horno medio (200°) por 8'</li>
+                            </ol>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{!-- fin modal 2--}}
+            {{!-- inicio modal 3--}}
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel2">Brownies</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h6>Ingredientes:</h6>
+                            <ul>
+                                <li>chocolate    150gr</li>
+                                <li>huevos          3</li>
+                                <li>azúcar       150gr</li>
+                                <li>manteca      100gr</li>
+                                <li>harina       50gr</li>
+                            </ul>
+                            <h6>Procedimiento:</h6>
+                            <ol>
+                                <li>derretir la manteca y el chocolate</li>
+                                <li>hacer un merengue con las claras y el azucar</li>
+                                <li>agregar la yemas a la mezcla de chocolate y manteca</li>
+                                <li>unir el paso anterior con el merengue</li>
+                                <li>agregar la harina</li>
+                                <li>cocinar a 180° por 20'</li>
+                            </ol>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{!-- fin modal 3--}}
         </div>
         {{!-- fin carrusel --}}
         {{!-- fin fila --}}
