@@ -1,11 +1,247 @@
+<link rel="stylesheet" href="/stylesheets/categorias.css">
 <div class="container-fluid">
     <div id="home" class="row align-items-center hero">
         {{!-- inicio titulo --}}
-        <div class="col-md-5 offset-md-1 py-3">
+        <div class="col-md-4 offset-md-1 py-3">
             <h1>Tortas</h1>
-            <p>Somos una familia que se dedica a poner en conocimiento de todos algunas recetas que consideramos
-                deliciosas y fáciles para compartir con todos los seres queridos.</p>
+            <p></p>
         </div>
         {{!-- fin titulo --}}
+        <div class="col-md-6 offset-md-1 py-3">
+            <ul class="list-group">
+                <li class="list-group-item" id="tortaopera1"><a href="" class="linklistascategorias" data-bs-toggle="modal" data-bs-target="#tortaopera">Torta opera</a></li>
+                <li class="list-group-item" id="chocotorta1"><a href="" class="linklistascategorias" data-bs-toggle="modal" data-bs-target="#chocotorta">Chocotorta</a></li>
+                <li class="list-group-item" id="tortabalcarce1"><a href="" class="linklistascategorias" data-bs-toggle="modal" data-bs-target="#tortabalcarce">Torta balcarce</a></li>
+                <li class="list-group-item" id="tiramisu1"><a href="" class="linklistascategorias" data-bs-toggle="modal" data-bs-target="#tiramisu">Tiramisú</a></li>
+                <li class="list-group-item" id="tortatresleches1"><a href="" class="linklistascategorias" data-bs-toggle="modal" data-bs-target="#tortatresleches">Torta tres leches</a></li>
+                <li class="list-group-item" id="tortamousse1"><a href="" class="linklistascategorias" data-bs-toggle="modal" data-bs-target="#tortamousse">Torta mousse</a></li>
+            </ul>
+        </div>
+        {{!-- inicio modal 1--}}
+            <div class="modal fade" id="tortaopera" tabindex="-1" aria-labelledby="tortaopera"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="tortaopera">Torta opera</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <img src="/images/opera.jpg" alt="tortaopera" class="imgmodalcategorias">
+                        <div class="modal-body">
+                            <h6>Ingredientes:</h6>
+                            <ul>
+                                <li>harina   250gr</li>
+                                <li>levadura fresca  75gr</li>
+                                <li>azúcar  50gr</li>
+                                <li>agua tibia  125ml</li>
+                                <li>harina  750gr</li>                                
+                            </ul>
+                            <h6>Procedimiento:</h6>
+                            <ol>
+                                <li>mezclar los huevos con el queso crema y el azúcar</li>
+                                <li>hacer un marinado con el café y el oporto</li>
+                                <li>pasar las vainillas por la mezcla del paso anterior y disponerlas en el molde</li>
+                                <li>intercalar las vainillas humedas con la mezcla del paso 1</li>
+                                <li>al finalizar espolvorearle cacao en polvo por encima</li>
+                                <li>llevar al frío por al menos 2hs</li>
+                            </ol>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{!-- fin modal 1--}}
+            {{!-- inicio modal 2--}}
+            <div class="modal fade" id="chocotorta" tabindex="-1" aria-labelledby="chocotorta"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="chocotorta">Chocotorta</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                         <img src="/images/chocotorta.jpg" alt="chocotorta" class="imgmodalcategorias">
+                        <div class="modal-body">
+                            <h6>Ingredientes:</h6>
+                            <ul>
+                                <li>vainillas   2 paquetes pequeños</li>
+                                <li>oporto  c/n</li>
+                                <li>café  c/n</li>
+                                <li>huevos  2</li>
+                                <li>queso crema  200gr</li>
+                                <li>azúcar  100gr</li>
+                                <li>cacao en polvo  c/n</li>
+                            </ul>
+                            <h6>Procedimiento:</h6>
+                            <ol>
+                                <li>mezclar los huevos con el queso crema y el azúcar</li>
+                                <li>hacer un marinado con el café y el oporto</li>
+                                <li>pasar las vainillas por la mezcla del paso anterior y disponerlas en el molde</li>
+                                <li>intercalar las vainillas humedas con la mezcla del paso 1</li>
+                                <li>al finalizar espolvorearle cacao en polvo por encima</li>
+                                <li>llevar al frío por al menos 2hs</li>
+                            </ol>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{!-- fin modal 2--}}
+            {{!-- inicio modal 3--}}
+            <div class="modal fade" id="tortabalcarce" tabindex="-1" aria-labelledby="tortabalcarce"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="tortabalcarce">Torta balcarce</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                         <img src="/images/balcarce.jpg" alt="tortabalcarce" class="imgmodalcategorias">
+                        <div class="modal-body">
+                            <h6>Ingredientes:</h6>
+                            <ul>
+                                <li>vainillas   2 paquetes pequeños</li>
+                                <li>oporto  c/n</li>
+                                <li>café  c/n</li>
+                                <li>huevos  2</li>
+                                <li>queso crema  200gr</li>
+                                <li>azúcar  100gr</li>
+                                <li>cacao en polvo  c/n</li>
+                            </ul>
+                            <h6>Procedimiento:</h6>
+                            <ol>
+                                <li>mezclar los huevos con el queso crema y el azúcar</li>
+                                <li>hacer un marinado con el café y el oporto</li>
+                                <li>pasar las vainillas por la mezcla del paso anterior y disponerlas en el molde</li>
+                                <li>intercalar las vainillas humedas con la mezcla del paso 1</li>
+                                <li>al finalizar espolvorearle cacao en polvo por encima</li>
+                                <li>llevar al frío por al menos 2hs</li>
+                            </ol>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{!-- fin modal 3--}}
+            {{!-- inicio modal 4--}}
+            <div class="modal fade" id="tiramisu" tabindex="-1" aria-labelledby="tiramisu"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="tiramisu">Tiramisú</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                         <img src="/images/tiramisu.jpg" alt="tiramisu" class="imgmodalcategorias">
+                        <div class="modal-body">
+                            <h6>Ingredientes:</h6>
+                            <ul>
+                                <li>vainillas   2 paquetes pequeños</li>
+                                <li>oporto  c/n</li>
+                                <li>café  c/n</li>
+                                <li>huevos  2</li>
+                                <li>queso crema  200gr</li>
+                                <li>azúcar  100gr</li>
+                                <li>cacao en polvo  c/n</li>
+                            </ul>
+                            <h6>Procedimiento:</h6>
+                            <ol>
+                                <li>mezclar los huevos con el queso crema y el azúcar</li>
+                                <li>hacer un marinado con el café y el oporto</li>
+                                <li>pasar las vainillas por la mezcla del paso anterior y disponerlas en el molde</li>
+                                <li>intercalar las vainillas humedas con la mezcla del paso 1</li>
+                                <li>al finalizar espolvorearle cacao en polvo por encima</li>
+                                <li>llevar al frío por al menos 2hs</li>
+                            </ol>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{!-- fin modal 4--}}
+            {{!-- inicio modal 5--}}
+            <div class="modal fade" id="tortatresleches" tabindex="-1" aria-labelledby="tortatresleches"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="tortatresleches">Torta tres leches</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                         <img src="/images/tresleches.png" alt="tortatresleches" class="imgmodalcategorias">
+                        <div class="modal-body">
+                            <h6>Ingredientes:</h6>
+                            <ul>
+                                <li>vainillas   2 paquetes pequeños</li>
+                                <li>oporto  c/n</li>
+                                <li>café  c/n</li>
+                                <li>huevos  2</li>
+                                <li>queso crema  200gr</li>
+                                <li>azúcar  100gr</li>
+                                <li>cacao en polvo  c/n</li>
+                            </ul>
+                            <h6>Procedimiento:</h6>
+                            <ol>
+                                <li>mezclar los huevos con el queso crema y el azúcar</li>
+                                <li>hacer un marinado con el café y el oporto</li>
+                                <li>pasar las vainillas por la mezcla del paso anterior y disponerlas en el molde</li>
+                                <li>intercalar las vainillas humedas con la mezcla del paso 1</li>
+                                <li>al finalizar espolvorearle cacao en polvo por encima</li>
+                                <li>llevar al frío por al menos 2hs</li>
+                            </ol>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{!-- fin modal 5--}}
+            {{!-- inicio modal 6--}}
+            <div class="modal fade" id="tortamousse" tabindex="-1" aria-labelledby="tortamousse"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="tortamousse">Torta Mousse</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div> 
+                         <img src="/images/tortamouse.jpg" alt="tortamousse" class="imgmodalcategorias">                    
+                        <div class="modal-body">
+                            <h6>Ingredientes:</h6>
+                            <ul>
+                                <li>vainillas   2 paquetes pequeños</li>
+                                <li>oporto  c/n</li>
+                                <li>café  c/n</li>
+                                <li>huevos  2</li>
+                                <li>queso crema  200gr</li>
+                                <li>azúcar  100gr</li>
+                                <li>cacao en polvo  c/n</li>
+                            </ul>
+                            <h6>Procedimiento:</h6>
+                            <ol>
+                                <li>mezclar los huevos con el queso crema y el azúcar</li>
+                                <li>hacer un marinado con el café y el oporto</li>
+                                <li>pasar las vainillas por la mezcla del paso anterior y disponerlas en el molde</li>
+                                <li>intercalar las vainillas humedas con la mezcla del paso 1</li>
+                                <li>al finalizar espolvorearle cacao en polvo por encima</li>
+                                <li>llevar al frío por al menos 2hs</li>
+                            </ol>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{!-- fin modal 6--}}
     </div>
 </div>

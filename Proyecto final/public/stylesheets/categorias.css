@@ -1,8 +1,285 @@
 .tarjeta {
-   background-color: transparent; 
+    background-color: transparent;
 }
 
 .tarjeta img {
     width: 100px;
     height: 100px;
+}
+
+.list-group {
+    text-align: center;
+    flex-direction: column;
+    padding-left: 30%;
+}
+
+.linklistascategorias {
+    text-decoration: none;
+    color: black;
+    transition: font-size 1s;
+    font-family: 'Libre Baskerville', serif;
+    font-size: large;
+}
+
+.linklistascategorias:hover {
+    color: black;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.imgmodalcategorias {
+    width: 100%;
+    height: 300px;
+}
+
+#croissant1 {
+    background: url(/images/croissant.jpg) no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 190px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+#croissant1:hover {
+    filter: grayscale(url);
+    opacity: 0.6;
+}
+
+#tartadefrutillas1 {
+    background: url(/images/tartadefrutilla.jpg);
+    background-size: cover;
+    height: 50px;
+    width: 190px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+#tartadefrutillas1:hover {
+    filter: grayscale(url);
+    opacity: 0.6;
+}
+
+#cuadraditosdementa1 {
+    background: url(/images/cuadraditosmenta.jpg);
+    background-size: cover;
+    height: 50px;
+    width: 190px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+#cuadraditosdementa1:hover {
+    filter: grayscale(url);
+    opacity: 0.6;
+}
+
+#flan1 {
+    background: url(/images/flan.jpg);
+    background-size: cover;
+    height: 50px;
+    width: 190px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+#flan1:hover {
+    filter: grayscale(url);
+    opacity: 0.6;
+}
+
+#profiteroles1 {
+    background: url(/images/profi.jpg);
+    background-size: cover;
+    height: 50px;
+    width: 190px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+#profiteroles1:hover {
+    filter: grayscale(url);
+    opacity: 0.6;
+}
+
+#macarons1 {
+    background: url(/images/macarons.jpg);
+    background-size: cover;
+    height: 50px;
+    width: 190px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+#macarons1:hover {
+    filter: grayscale(url);
+    opacity: 0.6;
+}
+
+#tortaopera1 {
+    background: url(/images/opera.jpg);
+    background-size: cover;
+    height: 50px;
+    width: 190px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+#tortaopera1:hover {
+    filter: grayscale(url);
+    opacity: 0.6;
+}
+
+#chocotorta1 {
+    background: url(/images/chocotorta.jpg);
+    background-size: cover;
+    height: 50px;
+    width: 190px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+#chocotorta1:hover {
+    filter: grayscale(url);
+    opacity: 0.6;
+}
+
+#tortabalcarce1 {
+    background: url(/images/balcarce.jpg);
+    background-size: cover;
+    height: 50px;
+    width: 190px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+#tortabalcarce1:hover {
+    filter: grayscale(url);
+    opacity: 0.6;
+}
+
+#tortatresleches1 {
+    background: url(/images/tresleches.png);
+    background-size: cover;
+    height: 50px;
+    width: 190px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+#tortatresleches1:hover {
+    filter: grayscale(url);
+    opacity: 0.6;
+}
+
+#tiramisu1 {
+    background: url(/images/tiramisu.jpg);
+    background-size: cover;
+    height: 50px;
+    width: 190px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+#tiramisu1:hover {
+    filter: grayscale(url);
+    opacity: 0.6;
+}
+
+#tortamousse1 {
+    background: url(/images/tortamouse.jpg);
+    background-size: cover;
+    height: 50px;
+    width: 190px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+#tortamousse1:hover {
+    filter: grayscale(url);
+    opacity: 0.6;
+}
+
+#marroc1 {
+    background: url(/images/marroc.png);
+    background-size: cover;
+    height: 50px;
+    width: 190px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+#marroc1:hover {
+    filter: grayscale(url);
+    opacity: 0.6;
+}
+
+#medallon1 {
+    background: url(/images/medallones.jpg);
+    background-size: cover;
+    height: 50px;
+    width: 190px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+#medallon1:hover {
+    filter: grayscale(url);
+    opacity: 0.6;
+}
+
+#bombon1 {
+    background: url(/images/bombon.jpg);
+    background-size: cover;
+    height: 50px;
+    width: 190px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+#bombon1:hover {
+    filter: grayscale(url);
+    opacity: 0.6;
+}
+
+#mouse1 {
+    background: url(/images/mouse.jfif);
+    background-size: cover;
+    height: 50px;
+    width: 190px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+#mouse1:hover {
+    filter: grayscale(url);
+    opacity: 0.6;
+}
+
+#alfajor1 {
+    background: url(/images/alfajor.jpg);
+    background-size: cover;
+    height: 50px;
+    width: 190px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+#alfajor1:hover {
+    filter: grayscale(url);
+    opacity: 0.6;
+}
+
+#volcan1 {
+    background: url(/images/Volcan.jpg);
+    background-size: cover;
+    height: 50px;
+    width: 190px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+#volcan1:hover {
+    filter: grayscale(url);
+    opacity: 0.6;
 }
