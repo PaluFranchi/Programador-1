@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript"></script>
+    <link rel="stylesheet" href="amor.css">
+
+</head>
+
+<body>
+    <!-- un menú desplegable -->
+
+    <body>
+        <div class='dropdown'>
+            <div class='title pointerCursor'>Seleccione una opción <i class="fa fa-angle-right"></i></div>
+
+            <div class='menu pointerCursor hide'>
+                <div class='option' id='option1'>Opcion 1</div>
+                <div class='option' id='option2'>Opcion 2</div>
+                <div class='option' id='option3'>Opcion 3</div>
+                <div class='option' id='option4'>Opcion 4</div>
+            </div>
+
+        </div>
+        <span id='result'>El resultado es: </span>
+
+        <script>
+
+
+            function toggleClass(elem, option) {
+                if (elem.option.indexOf(option) !== -1) {
+                    elem.option = elem.option.replace(option, '');
+                }
+                else {
+                    elem.option = elem.option.replace(/\s+/g, ' ') + ' ' + option;
+                }
+
+                return elem;
+            }
+
+            function toggleDisplay(elem) {
+                const curDisplayStyle = elem.style.display;
+
+                if (curDisplayStyle === 'none' || curDisplayStyle === '') {
+                    elem.style.display = 'block';
+                }
+                else {
+                    elem.style.display = 'none';
+                }
+            }
+
+
+            function toggleMenuDisplay(e) {
+                const dropdown = e.currentTarget.parentNode;
+                const menu = dropdown.querySelector('.menu');
+                const icon = dropdown.querySelector('.fa-angle-right');
+
+                toggleClass(menu, 'hide');
+                toggleClass(icon, 'rotate-90');
+            }
+
+            function handleOptionSelected(e) {
+                toggleClass(e.target.parentNode, 'hide');
+
+                const id = e.target.id;
+                const newValue = e.target.textContent + ' ';
+                const titleElem = document.querySelector('.dropdown .title');
+                const icon = document.querySelector('.dropdown .title .fa');
+
+
+                titleElem.textContent = newValue;
+                titleElem.appendChild(icon);
+
+                //Activa evento personalizado
+                document.querySelector('.dropdown .title').dispatchEvent(new Event('change'));
+                //setTimeout se usa para que la transición se muestre correctamente
+                setTimeout(() => toggleClass(icon, 'rotate-90', 0));
+            }
+
+            function handleTitleChange(e) {
+                const result = document.getElementById('result');
+
+                result.innerHTML = 'The result is: ' + e.target.textContent;
+            }
+        </script>
+    </body>
+
+</html>
