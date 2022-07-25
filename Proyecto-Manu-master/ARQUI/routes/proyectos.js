@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Federación Argentina de Tiro' });
+  res.render('proyectos', { title: 'Arquitecto Manuel Franchimont' });
 });
 
 module.exports = router;
